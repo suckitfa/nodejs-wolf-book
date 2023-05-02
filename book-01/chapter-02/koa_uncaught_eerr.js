@@ -13,9 +13,9 @@ app.use(ctx => {
     })
 })
 
-// process.on('uncaughtException', err => {
-//     console.log(err)
-// })
+process.on('uncaughtException', err => {
+    console.log(err)
+})
 
 app.listen(3000)
 
